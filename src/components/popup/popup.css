@@ -1,0 +1,52 @@
+.popup {
+  position: relative;
+  text-align: center;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  gap: 20px;
+  color: #000;
+  border-radius: 20px;
+  background-color: #fff;
+}
+
+.popup-actions {
+  margin: 10px auto;
+  display: flex;
+  gap: 20px;
+}
+
+.popup-action-btn {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+.popup-action-btn.cancel {
+  background-color: rgb(68, 69, 79, 0.1);
+  color: #afb1c0;
+}
+
+.cancel:hover {
+  background-color: rgb(68, 69, 79, 0.25);
+}
+
+.popup-action-btn.confirm {
+  color: #fff;
+  background-color: #ebc060;
+}
+
+.confirm:hover {
+  background-color: #ffb000;
+}
+
+.close-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 55px;
+  height: 55px;
+  border: none;
+  background: url(../../assets/icons/close-popup-icon.svg);
+}

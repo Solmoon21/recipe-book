@@ -1,0 +1,29 @@
+.sidebar {
+  padding-top: 75px;
+  position: fixed;
+  width: 160px;
+  height: 100vh;
+  background-color: #ffeeca;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  list-style-type: none;
+}
+
+.nav-link {
+  flex-grow: 1;
+}
+
+.nav-link.active {
+  height: 35%;
+  background-color: #fff;
+}
+
+.nav-link-image {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}

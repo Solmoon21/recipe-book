@@ -1,0 +1,83 @@
+.visually-hidden {
+  margin: -1px;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip: rect(0, 0, 0, 0);
+  position: absolute;
+}
+
+.select-control.form-control {
+  position: relative;
+  padding: 0;
+}
+
+.select-menu .select-btn {
+  display: flex;
+  height: 55px;
+  width: 100%;
+  color: rgb(175, 177, 192, 0.5);
+  background: #fff;
+  padding: 0 15px;
+  font-size: 18px;
+  font-weight: 400;
+  border-radius: 8px;
+  align-items: center;
+  cursor: pointer;
+  justify-content: space-between;
+}
+
+.select-btn.has-value {
+  color: #000;
+}
+
+.select-btn i {
+  transition: 0.3s;
+}
+
+.select-menu.active .select-btn i {
+  transform: rotate(-180deg);
+}
+
+.select-menu .options {
+  position: absolute;
+  top: 60px;
+  height: 200px;
+  overflow-y: scroll;
+  z-index: 2;
+  width: 100%;
+  border-radius: 8px;
+  background: #fff;
+  border: 1px solid gray;
+  display: none;
+}
+
+.select-menu.active .options {
+  display: block;
+}
+
+.options .option {
+  display: flex;
+  height: 55px;
+  padding: 0 16px;
+  border-radius: 8px;
+  align-items: center;
+  background: #fff;
+}
+
+.options .option:hover {
+  background: rgb(255, 206, 96, 0.2);
+}
+
+.options::-webkit-scrollbar {
+  display: none;
+}
+
+.option.selected {
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  background-color: #ffb000;
+}

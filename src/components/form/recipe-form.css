@@ -1,0 +1,96 @@
+.recipe-form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: fit-content;
+  height: 500px;
+  overflow-y: scroll;
+  background-color: #fff;
+  padding: 20px;
+  padding-bottom: 50px;
+}
+
+.recipe-form-title {
+  text-align: center;
+}
+
+.recipe-form-ingredients {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.recipe-form-row {
+  display: flex;
+  gap: 20px;
+}
+
+.recipe-form-row.gapped {
+  display: grid;
+  grid-template-columns: minmax(450px, 1fr) 200px 50px;
+}
+
+.recipe-form-row .delete-btn {
+  margin-left: -40px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translateX(-50%);
+  background: url(../../assets/icons/close-popup-icon.svg);
+}
+
+#recipe-form-time-field {
+  width: 150px;
+}
+
+#recipe-form-desc-field {
+  width: 100%;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-control {
+  position: relative;
+  padding: 15px;
+  border-radius: 7px;
+  color: #44454f;
+  border: 1px solid rgb(175, 177, 192, 0.5);
+}
+
+.form-control::placeholder {
+  color: rgb(175, 177, 192, 0.5);
+}
+
+.form-control:hover {
+  border: 1px solid rgb(175, 177, 192);
+}
+
+.form-control:focus::placeholder {
+  color: transparent;
+}
+
+.amount-field {
+  display: flex;
+}
+
+.amount-control-container {
+  display: flex;
+  gap: 10px;
+  width: 150px;
+}
+
+.amount-control {
+  width: 80px;
+}
+
+.unit-control {
+  width: 80px;
+}

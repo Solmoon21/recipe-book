@@ -1,0 +1,21 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 220px;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  background: url(../../assets/background.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.card-ingredients,
+.card-time {
+  display: inline-block;
+}
+
+.card-time {
+  float: right;
+}

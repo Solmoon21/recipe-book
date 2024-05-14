@@ -1,0 +1,172 @@
+@font-face {
+  font-family: 'montserrat';
+  src: url(./assets/fonts/montserrat/Montserrat-Regular.woff), url(./assets/fonts/montserrat/Montserrat-Regular.woff2);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'montserrat';
+  src: url(./assets/fonts/montserrat/Montserrat-Bold.woff), url(./assets/fonts/montserrat/Montserrat-Bold.woff2);
+  font-weight: bold;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'montserrat', sans-serif;
+}
+
+.title {
+  color: #ebc060;
+}
+
+.sub-title {
+  color: #000;
+}
+
+.title-xl {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.title-l {
+  font-size: 36px;
+  font-weight: normal;
+}
+
+.title-m {
+  font-size: 24px;
+}
+
+.text {
+  color: #afb1c0;
+}
+
+.text-s {
+  font-size: 16px;
+}
+
+.text-m {
+  font-size: 24px;
+}
+
+button {
+  border: none;
+}
+
+.main-layout {
+  display: flex;
+  background-color: #fff;
+}
+
+.button {
+  align-self: center;
+  border-radius: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
+  color: white;
+  background-color: #ffce60;
+}
+
+.button.add::before {
+  content: '+';
+  display: inline-block;
+  width: 20px;
+}
+
+.button:hover {
+  background-color: #ffb000;
+}
+
+.flipped-color {
+  color: #ffce60;
+  background-color: #fff;
+}
+
+.flipped-color:hover {
+  color: #fff;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.action-btn {
+  border-radius: 10%;
+  width: 50px;
+  height: 50px;
+  background-position: center !important;
+  background-size: cover !important;
+  cursor: pointer;
+}
+
+.actions .action-btn:first-child {
+  margin-right: auto;
+}
+
+.favorite-btn {
+  background: url(assets/icons/favorite-icon-off.svg);
+}
+
+.edit-btn {
+  background: url(assets/icons/edit-icon.svg);
+}
+
+.favorite-btn:hover {
+  background: url(assets/icons/favorite-icon-on.svg);
+}
+
+.edit-btn:hover {
+  background: url(assets/icons/edit-icon-hover.svg);
+}
+
+.edit-btn:focus {
+  background: url(assets/icons/edit-icon-focus.svg);
+}
+
+.delete-btn {
+  background: url(assets/icons/delete-icon.svg);
+}
+
+.delete-btn:hover {
+  background: url(assets/icons/delete-icon-hover.svg);
+}
+
+.delete-btn:focus {
+  background: url(assets/icons/delete-icon-focus.svg);
+}
+
+.favorite-btn.active {
+  background: url(assets/icons/favorite-icon-on.svg);
+}
+
+.close-details-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(-50%, 50%);
+  background: url(./assets/icons/close-details-icon.svg);
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(0, 0, 0, 0.7);
+}
+
+.recipes-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}

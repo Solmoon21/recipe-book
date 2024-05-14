@@ -1,0 +1,10 @@
+.time-control::after {
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  transform: translateY(-50%);
+  content: 'min';
+  width: 100px;
+  height: 55px;
+  background-color: green;
+}
